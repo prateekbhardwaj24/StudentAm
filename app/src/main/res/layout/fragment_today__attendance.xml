@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Todayattendance.Today_Attendance"
+    android:background="@drawable/glasso_background">
+
+    <TextView
+        android:id="@+id/no_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:text="No Attendance Marked Today"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/todayRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

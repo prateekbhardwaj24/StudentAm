@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.student.StudentAM">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name="com.student.StudentAM.OfflineMode"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentClassApp">
+        <activity android:name="com.student.StudentAM.editSubject_Activity"></activity>
+        <activity android:name="com.student.StudentAM.Log_In_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.student.StudentAM.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.StudentClassApp.NoActionBar"></activity>
+    </application>
+
+</manifest>
